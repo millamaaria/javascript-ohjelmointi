@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autot</title>
+</head>
+<body>
+  <h2>Auto rekisteri</h2>
+  <div id="autosArray"></div>
+
+  <h3>Lisää uusi auto</h3>
+  <form id="autoForm">
+    <label for="rekisterinumero">Rekisterinumero:</label>
+    <input type="text" id="rekisterinumero" required><br>
+    
+    <label for="valmistaja">Valmistaja:</label>
+    <input type="text" id="valmistaja" required><br>
+    
+    <label for="malli">Malli:</label>
+    <input type="text" id="malli" required><br>
+    
+    <label for="omistaja">Omistaja:</label>
+    <input type="text" id="omistaja" required><br>
+    
+    <label for="hinta">Hinta:</label>
+    <input type="number" id="hinta" required><br>
+    
+    <label for="vari">Väri:</label>
+    <input type="text" id="vari" required><br>
+    
+    <button type="button" onclick="addAuto()">Lisää auto</button>
+  </form>
+
+  <h3>Etsi autoa rekisterinumerolla:</h3>
+  <input type="text" id="searchRekisterinumero" placeholder="Enter Rekisterinumero">
+  <button onclick="searchAutoAndDisplay()">Search</button>
+  <div id="searchResult"></div>
+
+  <script src="autot.js"></script>
+</body>
+</html>

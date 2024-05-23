@@ -1,0 +1,2 @@
+# harjoitus1
+JavaScript
